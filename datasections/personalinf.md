@@ -1,12 +1,34 @@
 ---
 title: 'Información Personal'
 date: '2020-01-01'
+icon: 'https://github.githubassets.com/images/icons/emoji/unicode/1f9d1-2695.png?v8'
 order: 1
 ---
-
-Next.js has two forms of pre-rendering: **Static Generation** and **Server-side Rendering**. The difference is in **when** it generates the HTML for a page.
-
-- **Static Generation** is the pre-rendering method that generates the HTML at **build time**. The pre-rendered HTML is then _reused_ on each request.
-- **Server-side Rendering** is the pre-rendering method that generates the HTML on **each request**.
-
-Importantly, Next.js lets you **choose** which pre-rendering form to use for each page. You can create a "hybrid" Next.js app by using Static Generation for most pages and using Server-side Rendering for others.
+<table>
+    <tr>
+        <td><b>Nombre:</b></td>
+        <td>Mario Saúl Vélez Peña</td>
+        <td><b>Profesión:</b></td>
+        <td>Analista de Sistemas</td>
+    </tr>
+    <tr>        
+        <td><b>No.Cédula:</b></td>
+        <td>0916209703</td>
+        <td><b>Edad:</b></td>
+        <td>46</td>
+    </tr>    
+    <tr>
+        <td><b>E-mail:</b></td>
+        <td>mariovelezp@gmail.com</td>
+        <td><b>Estado Civil:</b></td>
+        <td>Casado</td>
+    </tr>    
+    <tr>
+        <td><b>Dirección:</b></td>
+        <td colspan=3>Ecuador - Guayas - Durán. Cdla. Ana Maria de Olmedo</td>
+    </tr>
+    <tr>
+        <td><b>Teléfono:</b></td>
+        <td colspan=3>0996880092</td>
+    </tr>
+</table>

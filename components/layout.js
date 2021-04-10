@@ -5,7 +5,7 @@ import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 
 const name = 'Mario Vélez'
-export const siteTitle = 'Next.js Sample Website'
+export const siteTitle = 'Mario Velez CV'
 
 export default function Layout({ children, home }) {
   return (
@@ -37,6 +37,7 @@ export default function Layout({ children, home }) {
               alt={name}
             />
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
+            <h2 className={utilStyles.lightText2}>Generalist Software Developer</h2>
           </>
         ) : (
           <>
@@ -60,7 +61,19 @@ export default function Layout({ children, home }) {
           </>
         )}
       </header>
-      <main>{children}</main>
+      <main>{children}</main>            
+      {home && (
+        <footer className={utilStyles.barFooter}>
+          <div className={utilStyles.lightTextFooter}>
+            <table cellPadding="0" cellSpacing="0">
+              <tr><td>Desarrollado por: </td><td><i> Mario Velez</i></td></tr>
+              <tr><td>Desarrollado con: </td><td><i> Node.js , Next.js</i></td></tr>
+              <tr><td>Última modificación: </td><td><i> May 2021</i></td></tr>            
+            </table>
+          </div>
+        </footer>
+      )}
+      
       {!home && (
         <div className={styles.backToHome}>
           <Link href="/">

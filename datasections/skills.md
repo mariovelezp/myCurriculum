@@ -1,6 +1,7 @@
 ---
 title: 'Conocimientos/Habilidades'
 date: '2020-01-01'
+icon: 'https://github.githubassets.com/images/icons/emoji/unicode/1f4da.png?v8'
 order: 4
 ---
 

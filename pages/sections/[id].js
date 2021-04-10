@@ -29,11 +29,13 @@ export async function getStaticPaths() {
           <title>{sectionData.title}</title>
         </Head>
         <article>
+          <img src={sectionData.icon} className={utilStyles.imagecover} />
           <h1 className={utilStyles.headingXl}>{sectionData.title}</h1>
           <div className={utilStyles.lightText}>
-            <Date dateString={sectionData.date} />
-          </div>
+            {/*<Date dateString={sectionData.date} />*/}
+          
           <div dangerouslySetInnerHTML={{ __html: sectionData.contentHtml }} />
+          </div>
         </article>
       </Layout>
     )

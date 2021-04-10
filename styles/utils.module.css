@@ -1,13 +1,12 @@
 .heading2Xl {
     font-size: 2.5rem;
     line-height: 1.2;
-    font-weight: 800;
+    font-weight: 600;
     letter-spacing: -0.05rem;
-    margin: 1rem 0;
+    margin: 0rem 0;
   }
-  
   .headingXl {
-    font-size: 2rem;
+    font-size: 1.5rem;
     line-height: 1.3;
     font-weight: 800;
     letter-spacing: -0.05rem;
@@ -50,3 +49,37 @@
   .lightText {
     color: #666;
   }
+  .lightText2 {
+    font-size: 1.5rem;
+    line-height: 1.2;
+    font-weight: 300;
+    letter-spacing: -0.05rem;
+    margin: 1rem 0;
+    color: #666;
+  }
+  .barFooter {
+    color: white;
+    background-color: #1A1A1A;
+    width: 100%;
+    height: 81px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .lightTextFooter {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    font-weight: 100;
+    letter-spacing: -0.05rem;
+    margin: 1rem 0;
+    color: #666;
+  }
+  .imagecover {
+    padding: 0px; 
+    margin: 0px; 
+    border: 2px 
+    solid rgb(255, 255, 255); 
+    float: left; 
+    width: 30px;
+  }
+  

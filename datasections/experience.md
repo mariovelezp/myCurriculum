@@ -1,6 +1,7 @@
 ---
 title: 'Experiencia Laboral'
 date: '2020-01-02' 
+icon: 'https://github.githubassets.com/images/icons/emoji/unicode/1f4bb.png?v8'
 order: 3
 ---
 

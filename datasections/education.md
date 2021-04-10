@@ -1,12 +1,26 @@
 ---
 title: 'Formación Académica'
 date: '2020-01-01'
+icon: 'https://github.githubassets.com/images/icons/emoji/unicode/1f468-1f393.png?v8'
 order: 2
 ---
-
-Next.js has two forms of pre-rendering: **Static Generation** and **Server-side Rendering**. The difference is in **when** it generates the HTML for a page.
-
-- **Static Generation** is the pre-rendering method that generates the HTML at **build time**. The pre-rendered HTML is then _reused_ on each request.
-- **Server-side Rendering** is the pre-rendering method that generates the HTML on **each request**.
-
-Importantly, Next.js lets you **choose** which pre-rendering form to use for each page. You can create a "hybrid" Next.js app by using Static Generation for most pages and using Server-side Rendering for others.
+<table>
+    <tr>
+        <td><b>Institucón Académica:</b></td>
+        <td>ESPOL - Escuela Superior Politécnica del Litoral</td>
+    </tr>
+    <tr>        
+        <td><b>Lugar:</b></td>
+        <td>Ecuador - Gye</td>
+    </tr>    
+    <tr>
+        <td><b>Titulación:</b></td>
+        <td>Analista de Sistemas</td>
+    </tr>    
+    <tr>
+        <td><b>No. Registro:</b></td>
+        <td>1021-04-511638 
+        <a href="https://www.senescyt.gob.ec/consulta-titulos-web/" 
+           title="Consultar títulos académicos">SENESCYT</a></td>
+    </tr>    
+</table>
