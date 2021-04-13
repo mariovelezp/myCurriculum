@@ -67,19 +67,19 @@ export default function Layout({ children, home }) {
       <nav>        
         <div className={utilStyles.sidebar}>
             <Link href='/'>
-              <a><i class="fa fa-fw fa-home"></i> Inicio</a>
+              <a><i className="fa fa-fw fa-home"></i> Inicio</a>
             </Link>          
             <Link href='/sections/contacto'>
-              <a><i class="fa fa-fw fa-address-card"></i> Contacto</a>
+              <a><i className="fa fa-fw fa-address-card"></i> Contacto</a>
             </Link>          
             <Link href='/sections/formacion'>
-              <a><i class="fa fa-fw fa-graduation-cap"></i> Formación</a>
+              <a><i className="fa fa-fw fa-graduation-cap"></i> Formación</a>
             </Link>          
             <Link href='/sections/experiencia'>
-              <a><i class="fa fa-fw fa-building"></i> Experiencia</a>
+              <a><i className="fa fa-fw fa-building"></i> Experiencia</a>
             </Link>          
             <Link href='/sections/conocimiento'>
-              <a><i class="fa fa-fw fa-book"></i> Conocimto</a>
+              <a><i className="fa fa-fw fa-book"></i> Conocimto</a>
             </Link>
           {/*
           <a href="#home"><i class="fa fa-fw fa-home"></i> Inicio</a>
