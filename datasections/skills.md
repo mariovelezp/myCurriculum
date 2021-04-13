@@ -1,10 +1,10 @@
 ---
-title: 'Conocimientos/Habilidades'
-date: '2020-01-01'
-icon: 'https://github.githubassets.com/images/icons/emoji/unicode/1f4da.png?v8'
+title: 'Conocimiento'
+date: 'cono'
+icon: 'fa fa-fw fa-book'
 order: 4
 ---
-
+** **
 Next.js has two forms of pre-rendering: **Static Generation** and **Server-side Rendering**. The difference is in **when** it generates the HTML for a page.
 
 - **Static Generation** is the pre-rendering method that generates the HTML at **build time**. The pre-rendered HTML is then _reused_ on each request.

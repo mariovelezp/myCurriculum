@@ -1,9 +1,10 @@
 ---
-title: 'Información Personal'
-date: '2020-01-01'
-icon: 'https://github.githubassets.com/images/icons/emoji/unicode/1f9d1-2695.png?v8'
+title: 'Contacto'
+date: 'cont'
+icon: 'fa fa-fw fa-address-card'
 order: 1
 ---
+** **
 <table>
     <tr>
         <td><b>Nombre:</b></td>
@@ -25,10 +26,8 @@ order: 1
     </tr>    
     <tr>
         <td><b>Dirección:</b></td>
-        <td colspan=3>Ecuador - Guayas - Durán. Cdla. Ana Maria de Olmedo</td>
-    </tr>
-    <tr>
+        <td>Ecuador - Guayas - Durán</td>    
         <td><b>Teléfono:</b></td>
-        <td colspan=3>0996880092</td>
+        <td>0996880092</td>
     </tr>
 </table>

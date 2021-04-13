@@ -6,7 +6,7 @@
     margin: 0rem 0;
   }
   .headingXl {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     line-height: 1.3;
     font-weight: 800;
     letter-spacing: -0.05rem;
@@ -14,7 +14,7 @@
   }
   
   .headingLg {
-    font-size: 1.5rem;
+    font-size: 1.0rem;
     line-height: 1.4;
     margin: 1rem 0;
   }
@@ -61,16 +61,16 @@
     color: white;
     background-color: #1A1A1A;
     width: 100%;
-    height: 81px;
-    position: absolute;
+    height: 12%;/*81px;*/
+    position: fixed;
     bottom: 0;
     left: 0;
   }
   .lightTextFooter {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     line-height: 1.2;
     font-weight: 100;
-    letter-spacing: -0.05rem;
+    letter-spacing: -0.01rem;
     margin: 1rem 0;
     color: #666;
   }
@@ -82,4 +82,54 @@
     float: left; 
     width: 30px;
   }
+  .sidebar {
+    height: 100%; /*100%;*/
+    width: 160px;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: rgb(5, 14, 53);/* #111;*/
+    overflow-x: hidden;
+    padding-top: 16px;
+  }
+  .sidebarright {
+    height: 100%; /*100%;*/
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: white;/* #111;*/
+    overflow-x: hidden;
+    padding-top: 16px;
+  }
+  .footersidebar {    
+    bottom:0px;        
+    width: 160px;
+    position: fixed;
+    z-index: 2;    
+    left: 0;
+    background-color: rgb(5, 14, 53);/* #111;*/
+    overflow-x: hidden;
+    padding-top: 16px;
+  }
+  .sidebar a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+  }
   
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  .main {
+    margin-left: 160px; /* Same as the width of the sidenav */
+    padding: 0px 10px;
+  }
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }

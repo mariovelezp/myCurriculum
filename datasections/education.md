@@ -1,9 +1,10 @@
 ---
-title: 'Formación Académica'
-date: '2020-01-01'
-icon: 'https://github.githubassets.com/images/icons/emoji/unicode/1f468-1f393.png?v8'
+title: 'Formación'
+id: 'educ'
+icon: 'fa fa-fw fa-graduation-cap'
 order: 2
 ---
+** **
 <table>
     <tr>
         <td><b>Institucón Académica:</b></td>
@@ -11,7 +12,7 @@ order: 2
     </tr>
     <tr>        
         <td><b>Lugar:</b></td>
-        <td>Ecuador - Gye</td>
+        <td>Ecuador - Guayaquil</td>
     </tr>    
     <tr>
         <td><b>Titulación:</b></td>

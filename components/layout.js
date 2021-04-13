@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
-import Link from 'next/link'
 
 const name = 'Mario Vélez'
 export const siteTitle = 'Mario Velez CV'
@@ -24,9 +24,10 @@ export default function Layout({ children, home }) {
         />
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
-      </Head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+      </Head>      
       <header className={styles.header}>
-        {home ? (
+        {home && (
           <>
             <Image
               priority
@@ -39,7 +40,9 @@ export default function Layout({ children, home }) {
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
             <h2 className={utilStyles.lightText2}>Generalist Software Developer</h2>
           </>
-        ) : (
+        )}
+        
+        {/*(
           <>
             <Link href="/">
               <a>
@@ -59,10 +62,66 @@ export default function Layout({ children, home }) {
               </Link>
             </h2>
           </>
-        )}
+        )*/}         
       </header>
-      <main>{children}</main>            
-      {home && (
+      <nav>        
+        <div className={utilStyles.sidebar}>
+            <Link href='/'>
+              <a><i class="fa fa-fw fa-home"></i> Inicio</a>
+            </Link>          
+            <Link href='/sections/contacto'>
+              <a><i class="fa fa-fw fa-address-card"></i> Contacto</a>
+            </Link>          
+            <Link href='/sections/formacion'>
+              <a><i class="fa fa-fw fa-graduation-cap"></i> Formación</a>
+            </Link>          
+            <Link href='/sections/experiencia'>
+              <a><i class="fa fa-fw fa-building"></i> Experiencia</a>
+            </Link>          
+            <Link href='/sections/conocimiento'>
+              <a><i class="fa fa-fw fa-book"></i> Conocimto</a>
+            </Link>
+          {/*
+          <a href="#home"><i class="fa fa-fw fa-home"></i> Inicio</a>
+          <a href="#services"><i class="fa fa-fw fa-address-card"></i> Contacto</a>
+          <a href="#clients"><i class="fa fa-fw fa-graduation-cap"></i> Formación</a>
+          <a href="#contact"><i class="fa fa-fw fa-building"></i> Experiencia</a>
+          <a href="#contact"><i class="fa fa-fw fa-book"></i> Conocimto</a>*/}
+          <div className={utilStyles.footersidebar}>
+            <p className={utilStyles.lightTextFooter}>
+              Desarrollado por: Mario Vélez<br/>
+              Última modificación: May 2021<br/>
+              Desarrollado con: Node.js, Next.js
+            </p>
+          </div>          
+        </div>
+      </nav>
+      {!home && (
+        <aside className={utilStyles.sidebarright}>
+          <>
+            <Link href="/">
+              <a>
+                <Image
+                  priority
+                  src="/images/personalphoto.jpg"
+                  className={utilStyles.borderCircle}
+                  height={108}
+                  width={108}
+                  alt={name} />
+              </a>
+            </Link>
+            <h2 className={utilStyles.headingLg}>
+              <Link href="/">
+                <a className={utilStyles.colorInherit}>{name}</a>
+              </Link>
+            </h2>
+          </>         
+        </aside>              
+      )}                   
+      
+      <main className={utilStyles.meta}>{children}</main>       
+      
+      {/*home && (
         <footer className={utilStyles.barFooter}>
           <div className={utilStyles.lightTextFooter}>
             <table cellPadding="0" cellSpacing="0">
@@ -72,7 +131,7 @@ export default function Layout({ children, home }) {
             </table>
           </div>
         </footer>
-      )}
+      )*/}
       
       {!home && (
         <div className={styles.backToHome}>
